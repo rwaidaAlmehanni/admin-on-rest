@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import createHistory from 'history/createHashHistory';
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
 import createSagaMiddleware from 'redux-saga';
+import thunk from 'redux-thunk';
 import { all, fork } from 'redux-saga/effects';
 import withContext from 'recompose/withContext';
 import { Route, Switch } from 'react-router-dom';
@@ -50,7 +51,11 @@ const Admin = ({
         resettableAppReducer,
         initialState,
         compose(
-            applyMiddleware(sagaMiddleware, routerMiddleware(routerHistory)),
+            applyMiddleware(
+                thunk,
+                sagaMiddleware,
+                routerMiddleware(routerHistory)
+            ),
             typeof window !== 'undefined' && window.devToolsExtension
                 ? window.devToolsExtension()
                 : f => f
