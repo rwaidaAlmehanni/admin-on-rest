@@ -1,5 +1,5 @@
 {
-    "name": "admin-on-rest",
+    "name": "admin-on-rest-kindian",
     "version": "1.4.0",
     "description": "A frontend Framework for building admin applications on top of REST services, using ES6, React and Material UI",
     "files": [
@@ -13,11 +13,11 @@
         "test": "make test"
     },
     "authors": [
-        "François Zaninotto"
+        "Rwaida Almehanni"
     ],
-    "repository": "marmelab/admin-on-rest",
-    "homepage": "https://github.com/marmelab/admin-on-rest#readme",
-    "bugs": "https://github.com/marmelab/admin-on-rest/issues",
+    "repository": "rwaidaAlmehanni/admin-on-rest-kindian",
+    "homepage": "https://github.com/rwaidaAlmehanni/admin-on-rest-kindian",
+    "bugs": "https://github.com/rwaidaAlmehanni/admin-on-rest-kindian/issues",
     "license": "MIT",
     "devDependencies": {
         "babel-cli": "~6.26.0",
